@@ -14,6 +14,8 @@ const ProfileCreation = ({ checkProfile, profileContract, account }) => {
       // HINT: https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#methods-mymethod-send
       // CODE HERE 👇
 
+      await profileContract.methods.setProfile(account).send({ from: account });
+
       checkProfile();
     } catch (error) {
       console.error(error);
