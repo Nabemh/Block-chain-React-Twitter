@@ -1,10 +1,6 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
 
-// 1️⃣ Finish getProfile() function to check if user exists
-// 2️⃣ Complete createProfile() function in ProfileCreation.js to create profile for a new user
-// 3️⃣ Set the correct profileContractAddress and contractAddress in Connect.js
-
 import Tweets from "./components/Tweets";
 import AddTweet from "./components/AddTweet";
 import Connect from "./components/Connect";
