@@ -50,7 +50,11 @@ export default function App() {
     // get profile using getProfile() function from the contract
     // return profile displayName
     // HINT: https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#methods-mymethod-call
+
+    const profile = await profileContract.methods.getProfile(account).call();
+
     setLoading(false);
+    return profile.displayName;
   }
 
   useEffect(() => {
